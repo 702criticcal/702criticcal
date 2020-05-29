@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <h1>공산품 생산관리</h1>
+    <div>
+      계정:
+      <input
+        type="text"
+        id="account"
+        value=""
+        placeholder="ETH 주소를 입력해주세요."
+        style="width: 200px;"
+      />
+      <p></p>
+      패스워드:
+      <input
+        type="password"
+        id="pass"
+        value=""
+        placeholder="ETH 비밀번호를 입력해주세요."
+        style="width: 200px;"
+      />
+    </div>
+    <br />
+    <div>
+      <input type="text" id="proname" placeholder="공산품 제품명" value="" style="width: 200px;" />
+      <input type="text" id="proloc" placeholder="생산지" value="" />
+      <input type="text" id="pronumber" placeholder="공산품 갯수" value="" />
+
+      <button onClick="addProduct()">제품 등록하기</button>
+    </div>
+    <table style="width:100%" id="table1"></table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/web3-light@0.20.6.js"></script>
+    <script type="text/javascript" src="./js/abi.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>

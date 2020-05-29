@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Welcome to Web ETHER Wallet</h1>
+    <div id="tablePlace"></div>
+    <h4>
+      송신처
+      <select id="accounts"></select>
+    </h4>
+    <h4>수신처<select id="receiver"></select></h4>
+    <h4>금액 <input id="amount" type="number" /> ETHER</h4>
+    <h4>
+      password <input id="pass" type="password" />
+      <button onClick="javascript:send()">Send</button>
+    </h4>
+    <div id="message"></div>
+    <button onclick="createNewAccount()">
+      계정 만들기
+    </button>
+    <script type="text/javascript" src="./js/lib/web3-light@0.20.6.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script>
+      refreshBalance();
+      makeSelect();
+    </script>
+  </body>
+</html>

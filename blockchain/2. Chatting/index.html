@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="margin: 15%">Chatting dApp</h1>
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="name" />
+        <input
+          type="text"
+          class="form-control"
+          id="chatting"
+          placeholder="chatting"
+        />
+      </div>
+      <button
+        type="button"
+        id="button"
+        class="btn btn-primary"
+        style="margin-bottom: 10%"
+      >
+        Submit
+      </button>
+      <div id="msg"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/lib/web3-light@0.20.6.js"></script>
+    <script type="text/javascript" src="./js/abi.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
